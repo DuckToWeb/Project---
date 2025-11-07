@@ -1,0 +1,31 @@
+body {
+    background: linear-gradient(to bottom, white, skyblue);
+    background-attachment: fixed;
+}
+
+.Box {
+    display: flex;
+    width: 550px; height: 550px;
+    margin-left: 500px;
+    position: relative;
+}
+
+.Head1 {
+    position: absolute; left: 170px; top: -20px;
+    animation: fade 1.2s ease forwards;
+}
+
+.Video {
+    border: 2px solid black;
+    height: 695px; width: 522px;
+    position: absolute; left: 518px; bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px black;
+    opacity: 0;
+    animation: fade 1.2s ease forwards;
+}
+
+@keyframes fade {
+    from {opacity: 0; transform: scale(0.97);}
+    to { opacity: 1; transform: scale(1);}
+}
